@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html  lang="ru">
+<html>
+<head>
+		<meta charset="UTF-8"/>	
+	
+		<title>Аэролодки в спб</title>
+		
+<script>		 
+  $( document ).ready(function() {
+    scaleVideoContainer();
+
+    initBannerVideoSize('.video-container .poster img');
+    initBannerVideoSize('.video-container .filter');
+    initBannerVideoSize('.video-container video');
+
+    $(window).on('resize', function() {
+      scaleVideoContainer();
+      scaleBannerVideoSize('.video-container .poster img');
+      scaleBannerVideoSize('.video-container .filter');
+      scaleBannerVideoSize('.video-container video');
+    });
+  });
+
+  function scaleVideoContainer() {
+    var height = $(window).height() + 5;
+    var unitHeight = parseInt(height) + 'px';
+    $('.homepage-hero-module').css('height',unitHeight);
+  }
+
+  function initBannerVideoSize(element){
+    $(element).each(function(){
+      $(this).data('height', $(this).height());
+      $(this).data('width', $(this).width());
+    });
+
+    scaleBannerVideoSize(element);
+  }
+
+  function scaleBannerVideoSize(element) {
+
+    var windowWidth = $(window).width(),
+    windowHeight = $(window).height() + 5,
+    videoWidth,
+    videoHeight;
+
+    // console.log(windowHeight);
+
+    $(element).each(function(){
+      var videoAspectRatio = $(this).data('height')/$(this).data('width');
+
+      $(this).width(windowWidth);
+
+      if(windowWidth < 1000){
+          videoHeight = windowHeight;
+          videoWidth = videoHeight / videoAspectRatio;
+          $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+
+          $(this).width(videoWidth).height(videoHeight);
+      }
+
+      $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+    });
+  }
+</script>
+		<meta  content="#000000"/>
+		<link rel="manifest" href="/manifest.json"/>
+</head>
+
+<body>
+		<a href="">основная информация</a>  Ссылки 
+		</hr>
+		
+
+</body> 
+
+<br><br><br><br><br><br><br>
+
+
+
+<body>
+картинки<br><br>
+<center><div>
+	<img src="img/2.jpg"  alt="аэролодка" title="Заказать"/>
+	<img src="img/3.jpg" height="240px" width="200px" alt="аэролодка" title="Заказать"/>
+	<img src="img/6.jpg" height="240px" width="200px" alt="аэролодка" title="Заказать"/>
+	<img src="img/7.jpg" height="240px" width="200px" alt="аэролодка" title="Заказать"/>
+	<img src="img/8.jpg" height="240px" width="200px" alt="аэролодка" title="Заказать"/>
+	<img src="img/9.jpg" height="240px" width="250px" alt="аэролодка" title="Заказать"/>
+</div></center>
+</body>
+
+<br><br><br><br><br><br><br>
+<body>
+<center>
+Таблица<br>
+<center><table border="2px" bgcolor="red" height="100px" width="75%" cellpadding="10"> 
+	<tr><h2>Варианты аэролодок<h2></tr>
+	<tr bgcolor="gold"><td><h1><center>Номер</center><h1></td><td><h1><center>Длина лодки(м)</center><h1></td><td><h1><center>Двигатель(Л.С)</center><h1></td><td><h1><center>Цена(т.р)</center><h1></td></tr>
+	<tr bgcolor="gold"><td><h2><center>№1</center><h2></td><td><h2><center>3,2</center><h2></td><td><h2><center>от 15 до 20</center><h2></td><td><h2><center>от 150 до 180</center><h2></td></tr>
+	<tr bgcolor="gold"><td><h2><center>№2</center><h2></td><td><h2><center>3,5</center><h2></td><td><h2><center>от 18,5 до 20</center><h2></td><td><h2><center>от 180 до 250</center><h2></td></tr>
+	<tr bgcolor="gold"><td><h2><center>№3</center><h2></td><td><h2><center>3,8</center><h2></td><td><h2><center>от 27 до 35</center><h2></td><td><h2><center>от 220 до 300</center><h2></td></tr>
+
+</table></center>
+
+</body>
+	<br><br><br><br><br><br><br>
+
+<body>
+	Телефон <br>
+		<h1><a href="teal:+79046001624">Телефон: +79046001624</a><h1>
+</body> 
+
+
+	<br><br><br><br><br><br><br>
+<body>
+Ссылки на сайте
+	<a name="kk">якорь</a>
+	<a href="#kk">переход к якорю</a>    16 урок
+</body> 
+
+	<br><br><br><br><br><br><br>
+<body>
+форма заказа + CSS
+	<h2>Заказать</h2>
+		<form action="site!!!.html"(сюда вписать сайт на который будет отправлять) name="f1"><br><br>
+			<input type="text" placeholder="Ваше имя" name="fox1" required> <br><br>
+			<input type="text" placeholder="Ваш номер телефона" name="fox2" required> <br><br>
+			<textarea placeholder="ваш текст" name="text"></textarea><br><br>
+			<input type="submit" value="заказать" name="fox1"> 
+		
+			
+			
+</body>
+
+	<br><br><br><br><br><br><br> 
+	
+<body> 
+<script> 
+	function FOTO(){
+	formal = document.getElementById("scale").value;
+	step= document.getElementById("foto");
+	step.width = 50*format;
+	}
+</script>   
+<script type="text/javascript">
+		alert("Javascript подключен");
+	function FOTO(){
+	formal = document.getElementById("scale").value;
+	step= document.getElementById("foto");
+	step.width = 50*format;
+	}
+
+</script>   
+Цвет дата ползунок
+	<form>
+	Выбор цвета<br>
+		<input type="color" value="#fcba05" ><br><br>
+	Выбор даты<br>
+ 		<input type="date" value="12-09-2019" min="12-09-2019" max="12-12-2019"><br><br>
+	Ползунок<br>
+		<input type="range" value="50" min="0" max="100" step="5" oninput="FOTO()" id="scale"><br><br>
+		<img src="img/2.jpg" alt="" width="130" id="foto">
+
+</body>
+
+	<br><br><br><br><br><br><br>
+<body>
+													
+													<center><h1>Fon<h1></center>
+		
+  <div class="homepage-hero-module">
+    <div class="video-container">
+      <div class="filter"></div>
+      <video autoplay loop muted playsinline src="video/Up.MP4" class="fillWidth"></video>
+      <div class="poster hidden">
+        <img src="PATH_TO_JPEG" alt="">
+		  
+      </div>
+    </div>
+  </div>
+ 
+
+</body>
+
+	<br><br><br><br><br><br><br>
+<body>
+
+
+</body>
+
+
+	<br><br><br><br><br><br><br>
+<body>
+
+
+</body>
+
+
+
+
+</html>
